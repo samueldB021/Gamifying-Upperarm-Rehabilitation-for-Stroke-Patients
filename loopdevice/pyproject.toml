@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=62", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mydevice"
+version = "0.1.0"
+description = "Python API for Neubond Loop serial acquisition"
+authors = [{ name = "Patrick Sagastegui Alva", email = "patrick@neubond.co.uk" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "pyserial",
+  "numpy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
